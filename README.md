@@ -39,13 +39,13 @@ import {
   TokensList
 } from "write-file-safe";
 
-function readMarkdown(path: string): Promise<TokensList>;
+function readMarkdown(path: string): Promise<TokensList | undefined>;
 
-function readMarkdownSync(path: string): TokensList;
+function readMarkdownSync(path: string): TokensList | undefined;
 
-function readMarkdownString(path: string): Promise<string>;
+function readMarkdownString(path: string): Promise<string | undefined>;
 
-function readMarkdownStringSync(path: string): string;
+function readMarkdownStringSync(path: string): string | undefined;
 
 // a Marked token list
 type TokensList = Token[] & {

@@ -10,11 +10,22 @@ export function readMarkdownStringSync(path: string) {
 }
 
 export async function readMarkdown(path: string) {
-  return readMarkdownString(path).then((text) => lexer(text));
+  return readMarkdownString(path).then((text) => {
+    if(text === undefined) {
+      return undefined;
+    } else {
+      return lexer(text);
+    }
+  });
 }
 
 export function readMarkdownSync(path: string) {
-  return lexer(readMarkdownStringSync(path));
+  const text = readMarkdownStringSync(path);
+  if(text === undefined) {
+    return undefined;
+  } else {
+    return lexer(text);
+  }
 }
 
 export {
