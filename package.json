@@ -1,0 +1,33 @@
+{
+  "name": "read-md-safe",
+  "version": "1.0.0",
+  "description": "Read markdown files as a Marked token list or string",
+  "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "https://connorwhite.org/github/read-md-safe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/read-md-safe.git"
+  },
+  "keywords": [],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "bob build",
+    "postversion": "git push",
+    "prepublishOnly": "yarn run build"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^2.0.1",
+    "@types/marked": "^1.1.0"
+  },
+  "dependencies": {
+    "marked": "^1.1.1"
+  }
+}
