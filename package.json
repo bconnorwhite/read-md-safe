@@ -33,11 +33,11 @@
     "postversion": "git push",
     "prepublishOnly": "yarn run build"
   },
-  "devDependencies": {
-    "@bconnorwhite/bob": "^2.0.1",
-    "@types/marked": "^1.1.0"
-  },
   "dependencies": {
+    "@types/marked": "^1.1.0",
     "marked": "^1.1.1"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^2.0.1"
   }
 }
