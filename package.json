@@ -1,6 +1,6 @@
 {
   "name": "read-md-safe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Read markdown files as a Marked token list or string",
   "license": "MIT",
   "author": {
