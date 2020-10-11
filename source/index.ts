@@ -1,4 +1,4 @@
-import { lexer, TokensList, Token } from "marked";
+import { lexer, TokensList, Token, Tokens } from "marked";
 import { readFile, readFileSync } from "read-file-safe";
 
 export async function readMarkdownString(path: string) {
@@ -30,5 +30,6 @@ export function readMarkdownSync(path: string) {
 
 export {
   TokensList,
-  Token
+  Token,
+  Tokens
 }

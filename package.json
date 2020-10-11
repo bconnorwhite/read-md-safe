@@ -30,14 +30,32 @@
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
+    "commit": "bob commit",
+    "lint": "bob lint",
     "postversion": "git push",
-    "prepublishOnly": "yarn run build"
+    "prepublishOnly": "yarn run build",
+    "release": "bob publish",
+    "test": "bob test"
   },
   "dependencies": {
     "@types/marked": "^1.1.0",
-    "marked": "^1.1.1"
+    "marked": "^1.1.1",
+    "read-file-safe": "^1.0.10"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.0.1"
+    "@bconnorwhite/bob": "^2.9.2",
+    "@types/mock-fs": "^4.13.0",
+    "mock-fs": "^4.13.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-bob"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "bob lint commit"
+    }
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-bob"
   }
 }
