@@ -1,4 +1,4 @@
-import { beforeEach, test } from "@jest/globals";
+import { beforeEach, test, expect } from "@jest/globals";
 import mock, { restore } from "mock-fs";
 import { readMarkdown, readMarkdownString, readMarkdownSync, readMarkdownStringSync } from "../source";
 
