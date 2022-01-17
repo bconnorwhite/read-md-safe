@@ -7,7 +7,7 @@ beforeEach(async () => {
     "/test": {
       "note.md": "# Title"
     }
-  })
+  });
 });
 
 afterEach(async () => {
