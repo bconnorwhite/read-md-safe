@@ -38,12 +38,12 @@
     "test": "bob test"
   },
   "dependencies": {
-    "marked": "^2.0.1",
+    "marked": "^4.0.10",
     "read-file-safe": "^1.0.10"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.9.2",
-    "@types/marked": "^2.0.1",
+    "@types/marked": "^4.0.1",
     "@types/mock-fs": "^4.13.0",
     "mock-fs": "^4.13.0"
   },
