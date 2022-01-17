@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/bconnorwhite/read-md-safe/compare/v1.0.4...v1.0.5) (2022-01-17)
+
+
+### Bug Fixes
+
+* dependency bumps ([56687de](https://github.com/bconnorwhite/read-md-safe/commit/56687deb48e5ef92854d726221d7c2fb8ad5798c))
+
+
+
 ## [1.0.4](https://github.com/bconnorwhite/read-md-safe/compare/v1.0.3...v1.0.4) (2021-03-30)
 
 
